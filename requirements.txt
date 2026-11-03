@@ -1,27 +1,3 @@
-definition_version: 2
-entities:
-  streamlit_app_copy:
-    type: streamlit
-    meta:
-      use_mixins:
-        - streamlit_shared
-  Ordering App:
-    type: streamlit
-    meta:
-      use_mixins:
-        - streamlit_shared
-      role: ACCOUNTADMIN
-    identifier:
-      name: ''
-      database: SMOOTHIES
-      schema: PUBLIC
-mixins:
-  streamlit_shared:
-    artifacts:
-      - pyproject.toml
-      - streamlit_app.py
-      - .streamlit/config.toml
-    title: Untitled 2
-    query_warehouse: COMPUTE_WH
-    compute_pool: SYSTEM_COMPUTE_POOL_CPU
-    main_file: streamlit_app.py
+# requirements.txt
+snowflake-snowpark-python
+streamlit
